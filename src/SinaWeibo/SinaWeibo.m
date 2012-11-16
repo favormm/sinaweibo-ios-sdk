@@ -293,6 +293,8 @@
         ssoLoggingIn = NO;
 
         // open sina weibo app
+        // Force to use 'authorize view'
+        /*
         UIDevice *device = [UIDevice currentDevice];
         if ([device respondsToSelector:@selector(isMultitaskingSupported)] &&
             [device isMultitaskingSupported])
@@ -320,6 +322,7 @@
                 ssoLoggingIn = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:appAuthURL]];
             }
         }
+        */
 
         if (!ssoLoggingIn)
         {
